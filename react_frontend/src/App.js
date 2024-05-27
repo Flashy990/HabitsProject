@@ -1,30 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Habit from './UserHabits';
-
-const Habits = () => {
-  const [habits, setHabits] = useState([]);
-
-  useEffect(() => {
-    axios.get('/api/habits')
-      .then(response => setHabits(response.data))
-      .catch(error => console.error(error));
-  }, []);
-
-  return (
-    <div>
-      {habits.map(habit => <Habit key={habit.id} habit={habit} />)}
-    </div>
-  );
-};
-
-export default Habits;
+import Create from './AddHabits';
 
 // export default App;
 
 // import logo from './logo.svg';
 // import './App.css';
 
+function App() {
+
+  return(
+    <div>
+      <Create></Create>
+    </div>
+  );
+
+}
+export default App;
 // function App() {
 //   return (
 //     <div className="App">
