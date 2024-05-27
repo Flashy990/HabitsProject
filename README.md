@@ -1,2 +1,2 @@
-## Habit Tracker
-# Gamifying the habits and daily goals
+# Habit Tracker
+## Gamifying the habits and daily goals
