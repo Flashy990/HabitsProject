@@ -1,0 +1,28 @@
+# Django
+*.pyc
+__pycache__
+*.pyo
+*.pyd
+*.log
+*.pot
+*.mo
+*.egg-info/
+db.sqlite3
+db.sqlite3-journal
+media
+
+# React
+node_modules/
+/build/
+.npm/
+
+# Environment files
+.env
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
