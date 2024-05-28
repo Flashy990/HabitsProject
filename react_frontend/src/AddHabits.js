@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-const Create = () => {
-  const [goal, setGoal] = useState('');
-  const [goalDescription, setGoalDescription] = useState('');
+const CreateHabit = () => {
+  const [goal, setGoal] = useState([]);
+  const [goalDescription, setGoalDescription] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -19,7 +19,7 @@ const Create = () => {
   }
 
   return (
-    <div className="create">
+    <div className="createhabit">
       <h2>Add a New Habit</h2>
       <form onSubmit={handleSubmit}>
         <label>Habit:</label>
@@ -41,4 +41,4 @@ const Create = () => {
   );
 }
  
-export default Create;
+export default CreateHabit;

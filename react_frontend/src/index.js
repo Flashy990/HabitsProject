@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Create from './AddHabits';
+import CreateHabit from './AddHabits';
+import ViewHabits from './ViewHabits';
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
   },
   {
     path: 'addhabits',
-    element: <Create></Create>
+    element: <CreateHabit></CreateHabit>
+  },
+  {
+    path: 'viewhabits',
+    element: <ViewHabits></ViewHabits>
   }
 ])
 

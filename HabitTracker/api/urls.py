@@ -5,6 +5,7 @@ from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
     path('habits/', views.habit_create, name='habit_create'),
+    path('habits/<int:pk>/', views.habit_delete, name='habit_delete'),
 ]
 # urlpatterns = [
 #     path('hello-world/', views.hello_world, name='hello_world_sigma'),
