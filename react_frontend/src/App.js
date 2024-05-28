@@ -1,22 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Create from './AddHabits';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// export default App;
 
-// import logo from './logo.svg';
-// import './App.css';
-
-function App() {
-
+const App = () => {
   return(
-    <div>
-      <Create></Create>
+    <div className='homepage'>
+      <h1>Habit Hacker</h1>
+      <Link to="addhabits"><button>Add new habit</button></Link>
     </div>
   );
 
 }
 export default App;
+
+
+// import logo from './logo.svg';
+// import './App.css';
 // function App() {
 //   return (
 //     <div className="App">

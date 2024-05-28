@@ -8,7 +8,7 @@ const Create = () => {
     <div className="create">
       <h2>Add a New Habit</h2>
       <form>
-        <label>Goal:</label>
+        <label>Habit:</label>
         <input 
           type="text" 
           required 
