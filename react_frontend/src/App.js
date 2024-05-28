@@ -7,6 +7,8 @@ const App = () => {
     <div className='homepage'>
       <h1>Habit Hacker</h1>
       <Link to="addhabits"><button>Add new habit</button></Link>
+      <Link to="viewhabits"><button>View current habits</button></Link>
+
     </div>
   );
 
