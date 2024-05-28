@@ -1,30 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import Habit from './UserHabits';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Habits = () => {
-  const [habits, setHabits] = useState([]);
 
-  useEffect(() => {
-    axios.get('/api/habits')
-      .then(response => setHabits(response.data))
-      .catch(error => console.error(error));
-  }, []);
-
-  return (
-    <div>
-      {habits.map(habit => <Habit key={habit.id} habit={habit} />)}
+const App = () => {
+  return(
+    <div className='homepage'>
+      <h1>Habit Hacker</h1>
+      <Link to="addhabits"><button>Add new habit</button></Link>
     </div>
   );
-};
 
-export default Habits;
+}
+export default App;
 
-// export default App;
 
 // import logo from './logo.svg';
 // import './App.css';
-
 // function App() {
 //   return (
 //     <div className="App">

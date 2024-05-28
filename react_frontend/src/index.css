@@ -1,13 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #232222;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  font-family: "Lucida Console";
+  color: #000000;
+}
+
+.homepage {
+  margin: 0 auto;
+  text-align: center;
+}
+.homepage h1 {
+  font-size: 100px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+.homepage Link {
+  text-align:center;
+}
+.homepage button {
+  background: #395240;
+  color: #f2f2f2;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* .homepage button {
+  background-color: #395240;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+} */
+/* create new habit form */
+.createhabit {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.createhabit label {
+  text-align: left;
+  display: block;
+  color: #f2f2f2;
+}
+
+.createhabit h2 {
+  font-size: 20px;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+}
+.createhabit input, .createhabit textarea, .createhabit select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  display: block;
+}
+.createhabit button {
+  background: #395240;
+  color: #f2f2f2;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
 }
