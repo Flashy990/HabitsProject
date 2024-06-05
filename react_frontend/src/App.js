@@ -8,37 +8,11 @@ const App = () => {
       <h1>Habit Hacker</h1>
       <Link to="addhabits"><button>Add new habit</button></Link>
       <Link to="viewhabits"><button>View current habits</button></Link>
-      {/* <Link to="/login"><button>Login</button></Link>
-      <Link to="/signup"><button>Sign Up</button></Link> */}
+      <Link to="rest-auth/login"><button>Login</button></Link>
+      <Link to="rest-auth/register"><button>Sign Up</button></Link>
 
     </div>
   );
 
 }
 export default App;
-
-
-// import logo from './logo.svg';
-// import './App.css';
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
