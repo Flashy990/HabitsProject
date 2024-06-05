@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 const ViewHabits = () => {
   const [habits, setHabits] = useState([]);
@@ -24,6 +26,8 @@ const ViewHabits = () => {
   return (
     <div className="habits">
       <h1>My Habits</h1>
+      <Link to="/"><button>Home</button></Link>
+
       {habits.map(habit => (
         <div className="habit" key={habit.id}>
           <h2>{habit.goal}</h2>
