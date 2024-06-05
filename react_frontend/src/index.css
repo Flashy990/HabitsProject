@@ -1,79 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-/* base styles */
-body {
-  background-color: #232222;
-}
-
-* {
-  margin: 0;
-  font-family: "Lucida Console";
-  color: #000000;
-}
-
-.homepage {
-  margin: 0 auto;
-  text-align: center;
-}
-.homepage h1 {
-  font-size: 100px;
-  color: #f2f2f2;
-  margin-bottom: 30px;
-}
-.homepage Link {
-  text-align:center;
-}
-.homepage button {
-  background: #395240;
-  color: #f2f2f2;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-/* .homepage button {
-  background-color: #395240;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-} */
-/* create new habit form */
 .createhabit {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-.createhabit label {
-  text-align: left;
-  display: block;
-  color: #f2f2f2;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .createhabit h2 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .createhabit label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .createhabit input, .createhabit textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .createhabit button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .createhabit button:hover {
+    background-color: #ff4500;
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .homepage h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .homepage button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .homepage button:hover {
+    background-color: #ff4500;
+  }
 
-.createhabit h2 {
-  font-size: 20px;
-  color: #f2f2f2;
-  margin-bottom: 30px;
-}
-.createhabit input, .createhabit textarea, .createhabit select {
-  width: 100%;
-  padding: 6px 10px;
-  margin: 10px 0;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  display: block;
-}
-.createhabit button {
-  background: #395240;
-  color: #f2f2f2;
-  border: 0;
-  padding: 8px;
-  border-radius: 8px;
-  cursor: pointer;
-}
+  
+/* For .habits div */
+.habits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .habit {
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+  }
+  
+  .habit h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .habit h2 {
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .habit p {
+    color: #999999;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .habit button {
+    background-color: #ff6347;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .habit button:hover {
+    background-color: #ff4500;
+  }

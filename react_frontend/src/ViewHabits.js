@@ -23,6 +23,7 @@ const ViewHabits = () => {
 
   return (
     <div className="habits">
+      <h1>My Habits</h1>
       {habits.map(habit => (
         <div className="habit" key={habit.id}>
           <h2>{habit.goal}</h2>

@@ -1,8 +1,11 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
+
 
 const CreateHabit = () => {
   const [goal, setGoal] = useState([]);
   const [goalDescription, setGoalDescription] = useState([]);
+  const [confirmation, setConfirmation] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +18,7 @@ const CreateHabit = () => {
       body: JSON.stringify(habit)
     }).then(() => {
       console.log('New habit added');
+      setConfirmation("New habit has been added");
     })
   }
 
@@ -36,7 +40,9 @@ const CreateHabit = () => {
           onChange={(e) => setGoalDescription(e.target.value)}
         ></textarea>
         <button>Add it</button>
+        <Link to="/"><button>Home</button></Link>
       </form>
+      {confirmation && <p>{confirmation}</p>} {/* Display the confirmation message once the habit has been added */}
     </div>
   );
 }
