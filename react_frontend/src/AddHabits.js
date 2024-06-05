@@ -18,7 +18,7 @@ const CreateHabit = () => {
       body: JSON.stringify(habit)
     }).then(() => {
       console.log('New habit added');
-      setConfirmation("New habit has been added");
+      setConfirmation("New habit has been added!");
     })
   }
 

@@ -8,6 +8,8 @@ const App = () => {
       <h1>Habit Hacker</h1>
       <Link to="addhabits"><button>Add new habit</button></Link>
       <Link to="viewhabits"><button>View current habits</button></Link>
+      {/* <Link to="/login"><button>Login</button></Link>
+      <Link to="/signup"><button>Sign Up</button></Link> */}
 
     </div>
   );
